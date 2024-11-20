@@ -20,7 +20,7 @@ The project achieves **extensibility** through the use of interfaces like `Aggre
    - Defines herbivores' unique attribute (`getRuminatingDuration`), allowing integration of animals like gazelles and elephants.
 
 4. **Perishable**
-   - Provides common behaviors for all living creatures, such as retrieving the death date (`getDeathDate`) and marking the entity as dead (`dies`).
+   - Provides  behaviors of herbivores that could be devoured.
 
 ### Extending the System with New Animal Breeds
 
