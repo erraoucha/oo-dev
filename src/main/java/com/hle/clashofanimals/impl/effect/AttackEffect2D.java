@@ -6,7 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 
 @Builder
-@Data
+
 public class AttackEffect2D implements AttackEffect {
 
     private String weapon;

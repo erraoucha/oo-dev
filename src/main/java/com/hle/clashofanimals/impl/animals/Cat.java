@@ -6,14 +6,14 @@ import com.hle.clashofanimals.api.types.Carnivore;
 import com.hle.clashofanimals.api.types.Herbivore;
 import com.hle.clashofanimals.impl.Animal;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
-@Builder
+@SuperBuilder
 @ToString
 public class Cat extends Animal implements Carnivore {
 

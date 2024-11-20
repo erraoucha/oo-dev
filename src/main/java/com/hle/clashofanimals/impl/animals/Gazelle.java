@@ -1,18 +1,18 @@
+package com.hle.clashofanimals.impl.animals;
+
 import java.time.LocalDate;
 
 import com.hle.clashofanimals.api.behaviors.Perishable;
-import com.hle.clashofanimals.api.effects.attack.AttackEffect;
 import com.hle.clashofanimals.api.types.Herbivore;
 import com.hle.clashofanimals.impl.Animal;
 
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 
 
-@Builder
-@Getter
+@SuperBuilder@Getter
 @Setter
 public class Gazelle extends Animal implements Herbivore, Perishable {
 
@@ -23,7 +23,7 @@ public class Gazelle extends Animal implements Herbivore, Perishable {
 
     @Override
     public String makeNoise() {
-        System.out.println(String.format("Gazelle <%s> is snorting with its trumpet : PFFFT ...", this.getName()));
+        return String.format("Gazelle <%s> is snorting : PFFFT ...", this.getName());
     }
 
     @Override
@@ -33,7 +33,7 @@ public class Gazelle extends Animal implements Herbivore, Perishable {
 
     @Override
     public void dies() {
-        System.out.println(String.format("Poor gazelle <%> is dying : <%s> ...", this.getName(), this.makeNoise()));
+        System.out.println(String.format("Poor gazelle <%s> is dying : %s ...", this.getName(), this.makeNoise()));
         this.deathDate =LocalDate.now();
     }
 

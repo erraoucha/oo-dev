@@ -5,15 +5,12 @@ import com.hle.clashofanimals.api.effects.attack.AttackEffect;
 import com.hle.clashofanimals.api.types.Herbivore;
 import com.hle.clashofanimals.impl.Animal;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import lombok.ToString;
+import lombok.experimental.SuperBuilder;
 
-
-@Getter
-@Setter
-@Builder
+@Data
+@SuperBuilder
 @ToString
 public class Elephant extends Animal implements Herbivore, Aggressive {
 
